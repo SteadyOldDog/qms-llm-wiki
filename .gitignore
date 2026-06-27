@@ -1,0 +1,19 @@
+﻿# 构建产物 - 可随时重新生成
+site/
+
+# Wrangler 本地缓存
+.wrangler/
+
+# 本地脚本（含 Token 处理）
+push_to_github.ps1
+
+# Windows 系统文件
+Thumbs.db
+Desktop.ini
+
+# 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
