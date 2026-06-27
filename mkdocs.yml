@@ -1,0 +1,74 @@
+﻿site_name: 质量管理与生物安全 LLM Wiki
+site_description: 质量管理体系（QMS）与生物安全管理体系知识库
+site_url: https://steadyolddog.github.io/qms-llm-wiki/
+repo_url: https://github.com/SteadyOldDog/qms-llm-wiki
+repo_name: qms-llm-wiki
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  icon:
+    logo: fontawesome/solid/flask-vial
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  - Wiki 模式: SCHEMA.md
+  - Wiki 日志: log.md
+  - 实体:
+    - entities/GB 19489-2008 生物安全通用要求.md
+    - entities/WS 233-2017 病原微生物实验室生物安全通用准则.md
+  - 概念:
+    - concepts/BSL-1实验室设施要求.md
+    - concepts/BSL-2实验室设施要求.md
+    - concepts/加强型BSL-2实验室.md
+    - concepts/BSL-3实验室设施要求.md
+    - concepts/BSL-4实验室设施要求.md
+    - concepts/动物生物安全实验室.md
+    - concepts/风险评估与风险控制.md
+    - concepts/生物安全防护水平分级.md
+    - concepts/病原微生物危害程度分类.md
+    - concepts/实验室设计原则与基本要求.md
+    - concepts/实验室围护结构严密性检测与HEPA检漏方法.md
+    - concepts/生物安全管理体系要求.md
+    - concepts/生物安全实验室良好工作行为指南.md
+    - concepts/实验室生物危险物质溢洒处理指南.md
+  - 比较:
+    - comparisons/BSL各级别实验室核心参数对比.md
+    - comparisons/WS 233-2017与GB 19489-2008对比.md
+  - 原始资料:
+    - raw/papers/GB 19489-2008-biosafety.md
+    - raw/papers/WS 233-2017-生物安全通用准则.md
